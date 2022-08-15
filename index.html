@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <form class="content">
+      <div class="line1">
+        <label for="First Name" id="fname">First Name<span class="mand">*</span></label>
+        <input type="text" />
+        <label for="Last Name" id="lname">Last Name<span class="mand">*</span></label>
+        <input type="text" />
+      </div>
+      <div class="line2">
+        <label for="Email" id="ename">Email<span class="mand">*</span></label>
+        <input type="email" id="email" style="width:515px" />
+      </div>
+      <div class="line3">
+        <label for="Experience" id="exp">Your Experience<span class="mand">*</span></label>
+      </div>
+      <div class="line4">
+        <span class="material-icons" style="color: yellow">star</span>
+        <span class="material-icons" style="color: yellow">star</span>
+        <span class="material-icons" style="color: yellow">star</span>
+        <span class="material-icons" style="color: yellow">star</span>
+        <span class="material-icons" style="color: yellow">star</span>
+      </div>
+
+      <h6>Overall, how would you rate your experience with us?</h4>
+      <h5>How satisfied are you with<span class="mand">*</span></h5>
+      <div class="table1">
+        <table id="table1">
+          <tr class="grid-container">
+            <th class="grid-item"></th>
+            <th class="grid-item">Very Unsatisfied</th>
+            <th class="grid-item">Unsatisfied</th>
+            <th class="grid-item">Neutral</th>
+            <th class="grid-item">Satisfied</th>
+            <th class="grid-item">Very Satisfied</th>
+          </tr>
+          <tr class="grid-container" id="grey">
+            <td class="grid-item">Purchase</td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+          </tr>
+          <tr class="grid-container">
+            <td class="grid-item">Service</td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+          </tr>
+          <tr class="grid-container" id="grey">
+            <td class="grid-item">Company Overall</td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+            <td class="grid-item"><input type="radio" class="radio" /></td>
+          </tr>
+        </table>
+        <h5>How likely are you to<span class="mand">*</span></h5>
+        <div class="table2">
+          <table id="table2">
+            <tr class="grid-container">
+              <th class="grid-item"></th>
+              <th class="grid-item">Very Unlikely</th>
+              <th class="grid-item">Unlikely</th>
+              <th class="grid-item">Neutral</th>
+              <th class="grid-item">Likely</th>
+              <th class="grid-item">Very Likely</th>
+            </tr>
+            <tr class="grid-container" id="grey">
+              <td class="grid-item">Buy from us again</td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+            </tr>
+            <tr class="grid-container">
+              <td class="grid-item">Recommend our product to others</td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+            </tr>
+            <tr class="grid-container" id="grey">
+              <td class="grid-item">Recommend our company to others</td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+              <td class="grid-item"><input type="radio" class="radio" /></td>
+            </tr>
+          </table>
+        </div>
+        <div class="comments">
+          <h5>Additional comments or suggestions</h5>
+          <form class="textarea">
+            <textarea name="message" rows="5" cols="95"></textarea>
+          </form>
+          <form class="submit">
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+.content {
+  margin: 20px;
+}
+
+.mand {
+  color: red;
+}
+
+.line2,
+.line3,
+h5,
+h6 {
+  margin-top: 20px;
+}
+
+#fname,
+#lname,
+#ename,
+#exp {
+  font-weight: bold;
+}
+
+.material-icons,
+.radio {
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-item {
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+#grey {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+
+@media screen and (min-device-width: 600px) and (max-device-width: 1200px) { 
+
+    #table1, #table2{
+    width:600px ;
+}
+
+#table1 .grid-item,
+#table2 .grid-item {
+    padding: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+textarea{
+    max-width:600px;
+  }
+}
